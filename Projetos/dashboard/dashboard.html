@@ -15,9 +15,12 @@
     <link rel="stylesheet" href="./assets/css/sb-admin.min.css" />
     <title>Dashboard</title>
   </head>
-  <body class="bg-dark" id="page-top">
+  <body class="bg-dark fixed-nav sticky-footer" id="page-top">
     <!--navegação-->
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+    <nav
+      class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top"
+      id="mainNav"
+    >
       <a href="index.html" class="navbar-brand">Admin Curso</a>
       <button
         class="navbar-toggler navbar-toggler-right"
@@ -67,8 +70,62 @@
             </a>
           </li>
         </ul>
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <form class="form-inline my-2 my-lg-0 mr-lg-2">
+              <div class="input-group">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Pesquisar por..."
+                />
+                <span class="input-group-btn">
+                  <button class="btn btn-primary" type="button">
+                    <i class="fa fa-search"></i>
+                  </button>
+                </span>
+              </div>
+            </form>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="fa fa-sign-out">Sair</i>
+            </a>
+          </li>
+        </ul>
       </div>
     </nav>
+
+    <div class="content-wrapper">
+      <div class="container-fluid">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item">
+            <a href="index.html">Home</a>
+          </li>
+          <li class="breadcrumb-item">
+            Página Em branco
+          </li>
+        </ol>
+        <div class="row">
+          <div class="col-12">
+            <h1>Título da Página</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta
+              suscipit, reiciendis voluptas at sed fugit debitis! Consectetur,
+              veniam explicabo quae animi voluptatem iste cum fugiat, dolores,
+              impedit doloremque quam rem?
+            </p>
+          </div>
+        </div>
+      </div>
+      <footer class="sticky-footer">
+        <div class="container">
+          <div class="text-center">
+            <small>Copyright 2020</small>
+          </div>
+        </div>
+      </footer>
+    </div>
 
     <script
       type="text/javascript"
